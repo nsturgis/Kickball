@@ -1,0 +1,10 @@
+<title><%= params[:team_name] %></title>
+<h1><%= params[:team_name] %></h1>
+<ul>
+ <% @player.each do |row| %>
+<li><%= row[:first_name]%> <%= row[:last_name]%>
+<a href="/positions/<%= row[:position]%>"><%= row[:position] %></a>
+<% end %>
+</li>
+</ul>
+

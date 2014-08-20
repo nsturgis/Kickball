@@ -1,0 +1,8 @@
+<h1><%=params[:position] %></h1>
+<ul>
+<% @position.each do |row| %>
+<li>
+<%=row[:first_name]%> <%=row[:last_name]%> <%=row[:team]%>
+<% end %>
+</li>
+</ul>
